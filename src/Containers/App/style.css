@@ -1,0 +1,11 @@
+.app {
+    height: 450px;
+    width: 550px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #424240;
+    border-radius: 20px;
+    position: relative;
+    box-sizing: border-box;
+}

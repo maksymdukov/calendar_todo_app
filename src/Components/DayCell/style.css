@@ -1,0 +1,47 @@
+.dayCell {
+    flex: 1 1 14.2%;
+    width: 14.2%;
+    height: 14.2%;
+    margin-bottom: 5px;
+}
+
+.dayCell-wrapper {
+    width: 90%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: inherit;
+    border: none;
+}
+
+.dayCell-wrapper:hover {
+    border: 2px solid #8e908c;
+    background-color: #828c95;
+}
+
+.dayCell.todayCell .dayCell-wrapper {
+    background-color: #0078D7;
+    padding: 2px;
+}
+
+.dayCell .dayCell-wrapper .dayCell-date {
+    position: relative;
+}
+
+.dayCell .dayCell-wrapper .dayCell-date .dayCell-icon {
+    display: inline-block;
+    position: absolute;
+    top: -13px;
+    right: -15px;
+    /*color: ghostwhite;*/
+    color: #e83e8c;
+}
+
+.dayCell.inactiveCell .dayCell-wrapper {
+    color: #6c757d;
+}

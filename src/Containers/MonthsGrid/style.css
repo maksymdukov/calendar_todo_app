@@ -1,0 +1,5 @@
+.monthsGrid {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}

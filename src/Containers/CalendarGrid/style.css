@@ -1,0 +1,11 @@
+.calendarGrid {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.dayOfWeek {
+    flex: 1 1 14.2%;
+    text-align: center;
+    color: whitesmoke;
+}

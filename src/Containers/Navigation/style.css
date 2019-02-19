@@ -1,0 +1,30 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation .navigation-arrows button {
+    margin-right: 30px;
+    background-color: inherit;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.navigation .navigation-arrows button:focus {
+    color: #e83e8c;
+}
+
+.navigation-currMonth button {
+    margin-left: 30px;
+    background-color: inherit;
+    color: whitesmoke;
+    border-radius: 20px;
+    /*border: 1px solid #80bdff;*/
+    padding: 5px;
+    outline: none;
+}
+
+.navigation-currMonth button:focus {
+    box-shadow: 0px 0px 19px -3px rgba(247, 230, 247, 1);
+}

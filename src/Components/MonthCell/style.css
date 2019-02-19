@@ -1,0 +1,28 @@
+.monthCell {
+    flex: 1 1 25%;
+    margin-bottom: 5px;
+}
+
+.monthCell-wrapper {
+    width: 90%;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: inherit;
+    border: none;
+}
+
+.monthCell-wrapper:hover {
+    border: 2px solid #8e908c;
+    background-color: #828c95;
+}
+
+.monthCell.todayCell .monthCell-wrapper {
+    background-color: #0078D7;
+    padding: 2px;
+}
