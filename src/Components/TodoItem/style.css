@@ -1,0 +1,36 @@
+.todoItem {
+    display: flex;
+    justify-content: center;
+}
+.todoItem-text {
+    width: 70%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 5px;
+    position: relative;
+}
+
+.todoItem-text:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -25px;
+    top: 9px;
+    border-radius: 50%;
+    background-color: #b3d7ff;
+}
+
+.todoItem-remove button {
+    width: 50px;
+    background-color: inherit;
+    border: none;
+    color: whitesmoke;
+    outline: none;
+}
+
+.todoItem-remove button:focus {
+    color: #e83e8c;
+}
