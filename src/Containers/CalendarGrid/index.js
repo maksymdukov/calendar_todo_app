@@ -8,8 +8,8 @@ import './style.css'
 
 const CalendarGrid = ({activeDate, activeMode, setDate, changeMode, todo}) => {
 
-    let grid = getWeeksGrid(activeDate);
-    let daysOfWeek = getDaysOfWeek();
+    const grid = getWeeksGrid(activeDate);
+    const daysOfWeek = getDaysOfWeek();
 
     return activeMode === 'CALENDAR_GRID'
         ? <div className='calendarGrid'>

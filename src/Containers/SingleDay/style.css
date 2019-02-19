@@ -29,7 +29,7 @@
     outline: none;
 }
 
-.singleDay .addNote button:focus {
+.singleDay .addNote button:hover {
     color: #e83e8c;
 }
 

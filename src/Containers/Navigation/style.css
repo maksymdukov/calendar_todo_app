@@ -11,7 +11,7 @@
     color: white;
 }
 
-.navigation .navigation-arrows button:focus {
+.navigation .navigation-arrows button:hover {
     color: #e83e8c;
 }
 
@@ -25,6 +25,6 @@
     outline: none;
 }
 
-.navigation-currMonth button:focus {
+.navigation-currMonth button:hover {
     box-shadow: 0px 0px 19px -3px rgba(247, 230, 247, 1);
 }

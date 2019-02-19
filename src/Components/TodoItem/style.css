@@ -31,6 +31,6 @@
     outline: none;
 }
 
-.todoItem-remove button:focus {
+.todoItem-remove button:hover {
     color: #e83e8c;
 }
