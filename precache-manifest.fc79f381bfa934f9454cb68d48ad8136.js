@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/calendar_todo_app/static/js/runtime~main.a14e6b93.js"
   },
   {
-    "revision": "294eb928adfe675f6ea4",
-    "url": "/calendar_todo_app/static/js/main.294eb928.chunk.js"
+    "revision": "919671d45d675fad0cff",
+    "url": "/calendar_todo_app/static/js/main.919671d4.chunk.js"
   },
   {
     "revision": "e200719d3a3eeb29a815",
     "url": "/calendar_todo_app/static/js/2.e200719d.chunk.js"
   },
   {
-    "revision": "294eb928adfe675f6ea4",
-    "url": "/calendar_todo_app/static/css/main.77e39da0.chunk.css"
+    "revision": "919671d45d675fad0cff",
+    "url": "/calendar_todo_app/static/css/main.c3f35432.chunk.css"
   },
   {
-    "revision": "da23e60cb429fdd60f97528188ba7946",
+    "revision": "6fc248e3da56d6c9ac1e03915b8dcce0",
     "url": "/calendar_todo_app/index.html"
   }
 ];
