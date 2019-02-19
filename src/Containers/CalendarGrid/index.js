@@ -7,12 +7,11 @@ import './style.css'
 
 
 const CalendarGrid = ({activeDate, activeMode, setDate, changeMode, todo}) => {
-
+if (activeMode === 'CALENDAR_GRID') {
     const grid = getWeeksGrid(activeDate);
     const daysOfWeek = getDaysOfWeek();
 
-    return activeMode === 'CALENDAR_GRID'
-        ? <div className='calendarGrid'>
+    return <div className='calendarGrid'>
             {daysOfWeek.map(name =>
                 <div key={name} className="dayOfWeek">
                     {name}
@@ -25,7 +24,8 @@ const CalendarGrid = ({activeDate, activeMode, setDate, changeMode, todo}) => {
                 )
             })}
         </div>
-        : null;
+} else return null;
+
 
 };
 

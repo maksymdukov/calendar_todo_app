@@ -7,15 +7,14 @@ import './style.css'
 
 
 const MonthsGrid = ({activeDate, activeMode, setActiveMonth, changeMode}) => {
-
-    let monthGrid = getMonthsGrid();
-
+    // let monthGrid = getMonthsGrid();
     return activeMode === 'MONTHS_GRID'
         ? <div className='monthsGrid'>
-            {monthGrid.map((month, ind) =>
+            { getMonthsGrid().map((month, ind) =>
                 <MonthCell key={month}
                            {...{month, activeDate, ind, setActiveMonth, changeMode}}
-                />)}
+                />
+                ) }
         </div>
         : null;
 

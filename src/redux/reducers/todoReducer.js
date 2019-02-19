@@ -31,6 +31,7 @@ const todoReducer = (state = initialState, {type, date, note, ind}) => {
             }
             localStorage.setItem( 'todoList', JSON.stringify(newState) );
             return newState;
+
         default:
             return state;
     }

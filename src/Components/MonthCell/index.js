@@ -8,12 +8,10 @@ const MonthCell = ({month, activeDate, ind, setActiveMonth, changeMode}) => {
         changeMode('CALENDAR_GRID');
     };
     let className = 'monthCell';
-    className += moment().isSame(activeDate.month(ind), 'month') ?
+    className += moment().isSame(moment(activeDate).month(ind), 'month') ?
         ' todayCell'
         : '';
-    // className += activeDate.isSame(day, 'month') ?
-    //     ''
-    //     : ' inactiveCell';
+
     return (
         <div {...{className}}>
             <button className='monthCell-wrapper' onClick={handleOnClick}>

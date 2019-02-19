@@ -3,7 +3,7 @@ import moment from "./moment";
 export const getWeeksGrid = (date) => {
     const NUMBER_OF_WEEKS = 6;
     const NUMBER_OF_DAYS = 7;
-    const currentMonth = new moment(date);
+    const currentMonth = moment(date);
     const firstDay = {
         'date': 1,
         'hour': 0
