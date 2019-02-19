@@ -28,7 +28,6 @@ class SingleDay extends React.Component {
                 activeDate,
                 activeMode,
                 todo,
-                addTodo,
                 deleteTodo
             },
             handleOnChange,

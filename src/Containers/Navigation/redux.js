@@ -17,6 +17,8 @@ export const mapDispatchToProps = (dispatch) => ({
             case 'SINGLE_DAY':
                 dispatch({type: PLUS_DAY});
                 break;
+            default:
+                break;
         }
     },
     handleMinus: (decType) => {
@@ -29,6 +31,8 @@ export const mapDispatchToProps = (dispatch) => ({
                 break;
             case 'SINGLE_DAY':
                 dispatch({type: MINUS_DAY});
+                break;
+            default:
                 break;
         }
     },

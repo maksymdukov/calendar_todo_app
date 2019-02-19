@@ -1,4 +1,4 @@
-import {CHANGE_MODE, MINUS_MONTH, PLUS_MONTH, SET_DATE} from '../../redux/types';
+import {CHANGE_MODE, SET_DATE} from '../../redux/types';
 
 export const mapStateToProps = (store) => ({
     activeDate: store.filter.activeDate,

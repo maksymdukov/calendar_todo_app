@@ -24,10 +24,10 @@ const Navigation = ({activeDate, handlePlus, handleMinus, activeMode, changeMode
         case 'SINGLE_DAY':
             modeFormat = activeDate.format('dddd, Do MMMM YYYY');
             break;
+        default:
+            break;
     }
-    //onClick of a button depending on activeMode
-
-
+    //onClick of a button depending on activeMode using LINKMAP to link them
     return (
         <div className='navigation'>
             <div className='navigation-currMonth'>
