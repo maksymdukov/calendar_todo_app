@@ -1,11 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Navigation from '../Navigation';
 import './style.css';
 import MainSection from '../MainSection'
 
-class App extends Component {
-
-    render() {
+const App = () => {
         return (
             <div className='app'>
                 <Navigation/>
@@ -14,6 +12,5 @@ class App extends Component {
             </div>
         );
     }
-}
 
 export default App;
