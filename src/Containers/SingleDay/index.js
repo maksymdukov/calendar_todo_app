@@ -40,8 +40,7 @@ class SingleDay extends React.Component {
             ? todo[currentDay]
             : [];
 
-        return activeMode === 'SINGLE_DAY' ?
-            <div className='singleDay'>
+        return <div className='singleDay'>
                 <div className='noteList'>
                     {listOfTodos.map((note, ind) =>
                         <TodoItem key={ind} {...{note, deleteTodo, ind, currentDay}} />
@@ -54,7 +53,6 @@ class SingleDay extends React.Component {
                     </button>
                 </div>
             </div>
-            : null;
     }
 }
 

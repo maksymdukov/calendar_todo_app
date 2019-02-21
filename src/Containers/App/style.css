@@ -1,6 +1,8 @@
 .app {
     height: 450px;
     width: 550px;
+    max-height: 500px;
+    max-width: 550px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;

@@ -4,6 +4,7 @@ import {mapStateToProps, mapDispatchToProps} from "./redux";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faAngleDown, faAngleUp} from '@fortawesome/free-solid-svg-icons'
 import './style.css'
+import {CSSTransitionGroup} from 'react-transition-group';
 
 const LINKMAP = {
     CALENDAR_GRID: "MONTHS_GRID",
@@ -11,7 +12,7 @@ const LINKMAP = {
     MONTHS_GRID: "CALENDAR_GRID"
 };
 
-const Navigation = ({activeDate, handlePlus, handleMinus, activeMode, changeMode}) => {
+const Navigation = ({activeDate, handlePlus, handleMinus, activeMode, changeMode, nextHandler, prevHandler}) => {
     //Text of a button depending on activeMode
     let modeFormat;
     switch (activeMode) {
@@ -28,18 +29,35 @@ const Navigation = ({activeDate, handlePlus, handleMinus, activeMode, changeMode
             break;
     }
     //onClick of a button depending on activeMode using LINKMAP to link them
+
     return (
         <div className='navigation'>
             <div className='navigation-currMonth'>
-                <button onClick={() => changeMode(LINKMAP[activeMode])}>
-                    {modeFormat}
+                {/*<CSSTransitionGroup*/}
+                    {/*component="div"*/}
+                    {/*transitionName="example"*/}
+                    {/*transitionEnterTimeout={500}*/}
+                    {/*transitionLeaveTimeout={0}*/}
+                {/*>*/}
+                <button className="currMonth-button"
+                        key={modeFormat}
+                        onClick={() => changeMode(LINKMAP[activeMode])}
+                >
+                        {modeFormat}
                 </button>
+                {/*</CSSTransitionGroup>*/}
             </div>
             <div className='navigation-arrows'>
-                <button onClick={() => handlePlus(activeMode)}>
+                <button className="navigation-nextSlide" onClick={() => {
+                    // handlePlus(activeMode);
+                    nextHandler();
+                }}>
                     <FontAwesomeIcon icon={faAngleUp} size="2x"/>
                 </button>
-                <button onClick={() => handleMinus(activeMode)}>
+                <button className="navigation-prevSlide" onClick={() => {
+                    // handleMinus(activeMode);
+                    prevHandler();
+                }}>
                     <FontAwesomeIcon icon={faAngleDown} size="2x"/>
                 </button>
             </div>

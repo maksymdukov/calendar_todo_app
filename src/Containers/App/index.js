@@ -5,11 +5,14 @@ import MainSection from '../MainSection'
 
 const App = () => {
         return (
-            <div className='app'>
-                <Navigation/>
-                <hr/>
-                <MainSection/>
+            <div>
+                <div className='app'>
+                    <Navigation/>
+                    <hr/>
+                    <MainSection/>
+                </div>
             </div>
+
         );
     };
 

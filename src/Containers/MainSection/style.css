@@ -1,2 +1,17 @@
 .mainSection {
+    height: 85%;
+}
+
+
+.customSwiper {
+    animation: appear-swiper 800ms ease-in-out;
+    height: 85%;
+}
+@keyframes appear-swiper {
+    0%{
+        opacity: 0.01;
+    }
+    100% {
+        opacity: 1;
+    }
 }

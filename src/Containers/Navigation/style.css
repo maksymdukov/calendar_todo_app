@@ -28,3 +28,15 @@
 .navigation-currMonth button:hover {
     box-shadow: 0px 0px 19px -3px rgba(247, 230, 247, 1);
 }
+
+.currMonth-button {
+    animation: appear 800ms ease-in-out;
+}
+@keyframes appear {
+    0%{
+        opacity: 0.01;
+    }
+    100% {
+        opacity: 1;
+    }
+}

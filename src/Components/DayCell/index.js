@@ -1,11 +1,10 @@
 import React from 'react';
 import './style.css';
 import moment from "../../utils/moment";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faListAlt} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faListAlt} from '@fortawesome/free-solid-svg-icons';
 
 const DayCell = ({day, activeDate, setDate, changeMode, todo}) => {
-    // let fullDate = activeDate.format('YYYY MM DD');
     let className = 'dayCell';
     className += moment().isSame(day, 'day') ?
         ' todayCell'

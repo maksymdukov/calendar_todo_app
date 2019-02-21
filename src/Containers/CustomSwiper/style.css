@@ -1,0 +1,18 @@
+.swiper-slide {
+    animation: appear-swiper 800ms ease-in-out;
+}
+.loading-wrapper {
+    text-align: center;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes appear-swiper {
+    0%{
+        opacity: 0.01;
+    }
+    100% {
+        opacity: 1;
+    }
+}

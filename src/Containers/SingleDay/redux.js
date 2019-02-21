@@ -1,7 +1,7 @@
 import {ADD_TODO, DELETE_TODO} from '../../redux/types';
 
 export const mapStateToProps = (store) => ({
-    activeDate: store.filter.activeDate,
+    // activeDate: store.filter.activeDate,
     activeMode: store.mode.activeMode,
     todo: store.todo
 });

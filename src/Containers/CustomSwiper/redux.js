@@ -1,13 +1,35 @@
-import {MINUS_MONTH, PLUS_MONTH, MINUS_YEAR, PLUS_YEAR, CHANGE_MODE, PLUS_DAY, MINUS_DAY} from '../../redux/types';
+import {
+    CHANGE_MODE, MINUS_DAY,
+    MINUS_MONTH, MINUS_YEAR,
+    PLUS_DAY,
+    PLUS_MONTH,
+    PLUS_YEAR,
+    SET_DATE,
+    SET_SWIPE_HANDLERS
+} from '../../redux/types';
 
 export const mapStateToProps = (store) => ({
     activeDate: store.filter.activeDate,
     activeMode: store.mode.activeMode,
-    nextHandler: store.mode.nextHandler,
-    prevHandler: store.mode.prevHandler
+    todo: store.todo
 });
 
 export const mapDispatchToProps = (dispatch) => ({
+    setDate: (date) => {
+        dispatch({
+            type: SET_DATE,
+            date
+        })
+    },
+    changeMode: (mode) => dispatch({
+        type: CHANGE_MODE,
+        mode,
+    }),
+    setHandlers: (nextHandler, prevHandler) => dispatch({
+        type: SET_SWIPE_HANDLERS,
+        nextHandler,
+        prevHandler
+    }),
     handlePlus: (incType) => {
         switch (incType) {
             case 'CALENDAR_GRID':
@@ -37,6 +59,5 @@ export const mapDispatchToProps = (dispatch) => ({
             default:
                 break;
         }
-    },
-    changeMode: (mode) => dispatch({type: CHANGE_MODE, mode})
+    }
 });
