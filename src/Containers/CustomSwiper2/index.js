@@ -38,6 +38,7 @@ class Custom extends Component {
             speed: 800,
             spaceBetween: 10,
             simulateTouch: false,
+            allowTouchMove: false,
             virtual: {
                 slides: self.state.slides,
                 renderExternal(data) {
