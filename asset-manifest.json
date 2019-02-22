@@ -1,13 +1,13 @@
 {
-  "main.css": "/calendar_todo_app/static/css/main.68c6635f.chunk.css",
-  "main.js": "/calendar_todo_app/static/js/main.c2b1cc68.chunk.js",
-  "main.js.map": "/calendar_todo_app/static/js/main.c2b1cc68.chunk.js.map",
+  "main.css": "/calendar_todo_app/static/css/main.440572ad.chunk.css",
+  "main.js": "/calendar_todo_app/static/js/main.5264e736.chunk.js",
+  "main.js.map": "/calendar_todo_app/static/js/main.5264e736.chunk.js.map",
   "runtime~main.js": "/calendar_todo_app/static/js/runtime~main.a14e6b93.js",
   "runtime~main.js.map": "/calendar_todo_app/static/js/runtime~main.a14e6b93.js.map",
-  "static/js/2.009d1fad.chunk.js": "/calendar_todo_app/static/js/2.009d1fad.chunk.js",
-  "static/js/2.009d1fad.chunk.js.map": "/calendar_todo_app/static/js/2.009d1fad.chunk.js.map",
+  "static/js/2.4c983596.chunk.js": "/calendar_todo_app/static/js/2.4c983596.chunk.js",
+  "static/js/2.4c983596.chunk.js.map": "/calendar_todo_app/static/js/2.4c983596.chunk.js.map",
   "index.html": "/calendar_todo_app/index.html",
-  "precache-manifest.f5e616c19c4dbf7a46ac5004a44ef300.js": "/calendar_todo_app/precache-manifest.f5e616c19c4dbf7a46ac5004a44ef300.js",
+  "precache-manifest.6e56d4c49242126df2dc631cf335b90a.js": "/calendar_todo_app/precache-manifest.6e56d4c49242126df2dc631cf335b90a.js",
   "service-worker.js": "/calendar_todo_app/service-worker.js",
-  "static/css/main.68c6635f.chunk.css.map": "/calendar_todo_app/static/css/main.68c6635f.chunk.css.map"
+  "static/css/main.440572ad.chunk.css.map": "/calendar_todo_app/static/css/main.440572ad.chunk.css.map"
 }
