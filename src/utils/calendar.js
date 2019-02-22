@@ -49,3 +49,20 @@ export const getSlides = (activeDay, activeMode) => {
         return moment(activeDay.add(1, MODES[activeMode]));
     })
 };
+
+export const getInitialSlides = (centralDay, activeMode) => {
+    const activeDay = moment(centralDay);
+    const NUMBER_OF_SLIDES = 5;
+    activeDay.subtract(3, MODES[activeMode]);
+    return Array.from({length: NUMBER_OF_SLIDES}, () => {
+        return moment(activeDay.add(1, MODES[activeMode]));
+    })
+};
+
+export const addTime = (date, amount, activeMode ) => {
+  return moment(date).add(amount, MODES[activeMode]);
+};
+
+export const subtractTime = (date, amount, activeMode) => {
+    return moment(date).subtract(amount, MODES[activeMode]);
+};

@@ -24,11 +24,9 @@ class CustomSwiper extends Component {
 
 
     shouldComponentUpdate(nextProps, nextState, nextContext) {
-        const ind = this.DOMswiper.current.swiper.activeIndex;
         if (this.state.slides === nextState.slides) {
             return false;
         } else {
-            console.log("shouldUPDATE!!!!");
             return true;
         }
     }

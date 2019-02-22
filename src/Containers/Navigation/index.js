@@ -4,7 +4,6 @@ import {mapStateToProps, mapDispatchToProps} from "./redux";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faAngleDown, faAngleUp} from '@fortawesome/free-solid-svg-icons'
 import './style.css'
-import {CSSTransitionGroup} from 'react-transition-group';
 
 const LINKMAP = {
     CALENDAR_GRID: "MONTHS_GRID",
@@ -33,30 +32,21 @@ const Navigation = ({activeDate, handlePlus, handleMinus, activeMode, changeMode
     return (
         <div className='navigation'>
             <div className='navigation-currMonth'>
-                {/*<CSSTransitionGroup*/}
-                    {/*component="div"*/}
-                    {/*transitionName="example"*/}
-                    {/*transitionEnterTimeout={500}*/}
-                    {/*transitionLeaveTimeout={0}*/}
-                {/*>*/}
                 <button className="currMonth-button"
                         key={modeFormat}
                         onClick={() => changeMode(LINKMAP[activeMode])}
                 >
                         {modeFormat}
                 </button>
-                {/*</CSSTransitionGroup>*/}
             </div>
             <div className='navigation-arrows'>
                 <button className="navigation-nextSlide" onClick={() => {
-                    // handlePlus(activeMode);
-                    nextHandler();
+                    prevHandler();
                 }}>
                     <FontAwesomeIcon icon={faAngleUp} size="2x"/>
                 </button>
                 <button className="navigation-prevSlide" onClick={() => {
-                    // handleMinus(activeMode);
-                    prevHandler();
+                    nextHandler();
                 }}>
                     <FontAwesomeIcon icon={faAngleDown} size="2x"/>
                 </button>
